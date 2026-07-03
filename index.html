@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Forkwell responsive restaurant menu with category filtering and a live cart.">
+  <title>Forkwell Menu</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome CDN plus safe local text fallback, so icons do not disappear if the CDN is blocked. -->
+  <style>
+    .fa-solid { font-style: normal; line-height: 1; }
+    .fa-bars::before { content: "☰"; }
+    .fa-bag-shopping::before { content: "▣"; }
+    .fa-plus::before { content: "+"; }
+    .fa-minus::before { content: "−"; }
+    .fa-trash-can::before { content: "×"; }
+    .fa-xmark::before { content: "×"; }
+    .fa-credit-card::before { content: "▭"; }
+    .fa-border-all::before { content: "▦"; }
+    .fa-utensils::before { content: "⌁"; }
+    .fa-bowl-food::before { content: "◒"; }
+    .fa-seedling::before { content: "♧"; }
+    .fa-ice-cream::before { content: "◌"; }
+    .fa-mug-hot::before { content: "◫"; }
+    .fa-leaf::before { content: "♧"; }
+    .fa-pepper-hot::before { content: "!"; }
+    .fa-star::before { content: "★"; }
+    .fa-basket-shopping::before { content: "▣"; }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#menu-title">Skip to menu</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Forkwell home">
+        <img class="brand-logo" src="images/forkwell_logo.png" alt="Forkwell logo">
+      </a>
+
+      <button class="menu-toggle" type="button" id="menu-toggle" aria-controls="category-nav" aria-expanded="false" aria-label="Open menu categories">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+
+      <nav class="category-nav" id="category-nav" aria-label="Menu categories"></nav>
+
+      <button class="cart-toggle" type="button" id="cart-toggle" aria-controls="cart-panel" aria-expanded="false" aria-label="Open cart. 0 items in cart.">
+        <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+        <span class="cart-badge" id="cart-badge" aria-label="0 cart items">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="menu-area" aria-labelledby="menu-title">
+      <h1 id="menu-title" class="sr-only">Forkwell Menu</h1>
+      <p class="menu-status" id="menu-status" role="status">Loading menu...</p>
+      <div class="menu-sections" id="menu-sections"></div>
+    </section>
+
+    <aside class="cart-panel" id="cart-panel" aria-label="Cart panel" tabindex="-1">
+      <div class="cart-header">
+        <div>
+          <p class="cart-kicker">Your order</p>
+          <h2>Cart</h2>
+        </div>
+        <button class="cart-close" type="button" id="cart-close" aria-label="Close cart">
+          <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <p class="empty-cart" id="empty-cart">
+        <i class="fa-solid fa-basket-shopping" aria-hidden="true"></i>
+        <span>Your cart is empty. Add a dish to get started.</span>
+      </p>
+      <ul class="cart-items" id="cart-items" aria-label="Cart items"></ul>
+
+      <dl class="cart-totals" aria-label="Cart totals">
+        <div>
+          <dt>Subtotal</dt>
+          <dd id="subtotal">$0.00</dd>
+        </div>
+        <div>
+          <dt>Tax <span id="tax-label">(8%)</span></dt>
+          <dd id="tax">$0.00</dd>
+        </div>
+        <div class="total-row">
+          <dt>Total</dt>
+          <dd id="total">$0.00</dd>
+        </div>
+      </dl>
+
+      <button class="checkout-button" type="button" id="checkout-button">
+        <i class="fa-solid fa-credit-card" aria-hidden="true"></i>
+        <span>Checkout</span>
+      </button>
+    </aside>
+  </main>
+
+  <button class="drawer-backdrop" type="button" id="drawer-backdrop" aria-label="Close open panel"></button>
+  <div class="sr-only" id="cart-live" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

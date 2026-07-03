@@ -1,0 +1,228 @@
+{
+  "restaurant": "Forkwell",
+  "currency": "USD",
+  "currency_symbol": "$",
+  "tax_rate": 0.08,
+  "categories": [
+    "Starters",
+    "Mains",
+    "Sides",
+    "Desserts",
+    "Drinks"
+  ],
+  "items": [
+    {
+      "id": "br",
+      "name": "Bruschetta Trio",
+      "category": "Starters",
+      "price": 8.5,
+      "description": "Toasted sourdough, tomato, basil, olive tapenade.",
+      "image": "images/cat_starters.png",
+      "tags": [
+        "veg"
+      ]
+    },
+    {
+      "id": "ca",
+      "name": "Crispy Calamari",
+      "category": "Starters",
+      "price": 11.0,
+      "description": "Lightly fried squid with lemon aioli.",
+      "image": "images/cat_starters.png",
+      "tags": []
+    },
+    {
+      "id": "so",
+      "name": "Soup of the Day",
+      "category": "Starters",
+      "price": 7.0,
+      "description": "Chef's daily seasonal soup with warm bread.",
+      "image": "images/cat_starters.png",
+      "tags": [
+        "veg"
+      ]
+    },
+    {
+      "id": "fo",
+      "name": "Garlic Focaccia",
+      "category": "Starters",
+      "price": 6.5,
+      "description": "Rosemary focaccia, roasted garlic butter.",
+      "image": "images/cat_starters.png",
+      "tags": [
+        "veg"
+      ]
+    },
+    {
+      "id": "pz",
+      "name": "Margherita Pizza",
+      "category": "Mains",
+      "price": 13.5,
+      "description": "San Marzano tomato, fresh mozzarella, basil.",
+      "image": "images/cat_mains.png",
+      "tags": [
+        "veg",
+        "popular"
+      ]
+    },
+    {
+      "id": "sa",
+      "name": "Grilled Salmon",
+      "category": "Mains",
+      "price": 19.0,
+      "description": "Herb-crusted salmon, greens, lemon butter.",
+      "image": "images/cat_mains.png",
+      "tags": [
+        "popular"
+      ]
+    },
+    {
+      "id": "ri",
+      "name": "Mushroom Risotto",
+      "category": "Mains",
+      "price": 15.5,
+      "description": "Arborio rice, wild mushrooms, parmesan.",
+      "image": "images/cat_mains.png",
+      "tags": [
+        "veg"
+      ]
+    },
+    {
+      "id": "bu",
+      "name": "Beef Burger",
+      "category": "Mains",
+      "price": 14.0,
+      "description": "Aged beef, cheddar, house sauce, brioche bun.",
+      "image": "images/cat_mains.png",
+      "tags": []
+    },
+    {
+      "id": "ck",
+      "name": "Roast Chicken",
+      "category": "Mains",
+      "price": 17.5,
+      "description": "Half chicken, roast potatoes, pan jus.",
+      "image": "images/cat_mains.png",
+      "tags": []
+    },
+    {
+      "id": "pe",
+      "name": "Penne Arrabbiata",
+      "category": "Mains",
+      "price": 12.5,
+      "description": "Penne, chili tomato sugo, garlic.",
+      "image": "images/cat_mains.png",
+      "tags": [
+        "veg",
+        "spicy"
+      ]
+    },
+    {
+      "id": "fr",
+      "name": "Truffle Fries",
+      "category": "Sides",
+      "price": 6.0,
+      "description": "Skin-on fries, truffle oil, parmesan.",
+      "image": "images/cat_sides.png",
+      "tags": [
+        "veg",
+        "popular"
+      ]
+    },
+    {
+      "id": "hs",
+      "name": "House Salad",
+      "category": "Sides",
+      "price": 5.5,
+      "description": "Mixed leaves, cucumber, house vinaigrette.",
+      "image": "images/cat_sides.png",
+      "tags": [
+        "veg"
+      ]
+    },
+    {
+      "id": "gr",
+      "name": "Seasonal Greens",
+      "category": "Sides",
+      "price": 5.0,
+      "description": "Buttered seasonal greens with garlic.",
+      "image": "images/cat_sides.png",
+      "tags": [
+        "veg"
+      ]
+    },
+    {
+      "id": "ti",
+      "name": "Tiramisu",
+      "category": "Desserts",
+      "price": 7.5,
+      "description": "Espresso-soaked sponge, mascarpone, cocoa.",
+      "image": "images/cat_desserts.png",
+      "tags": [
+        "popular"
+      ]
+    },
+    {
+      "id": "fd",
+      "name": "Chocolate Fondant",
+      "category": "Desserts",
+      "price": 8.0,
+      "description": "Warm molten chocolate, vanilla ice cream.",
+      "image": "images/cat_desserts.png",
+      "tags": []
+    },
+    {
+      "id": "cc",
+      "name": "Lemon Cheesecake",
+      "category": "Desserts",
+      "price": 7.0,
+      "description": "Baked lemon cheesecake, berry compote.",
+      "image": "images/cat_desserts.png",
+      "tags": [
+        "veg"
+      ]
+    },
+    {
+      "id": "le",
+      "name": "Fresh Lemonade",
+      "category": "Drinks",
+      "price": 4.0,
+      "description": "House lemonade with mint.",
+      "image": "images/cat_drinks.png",
+      "tags": [
+        "veg"
+      ]
+    },
+    {
+      "id": "ic",
+      "name": "Iced Coffee",
+      "category": "Drinks",
+      "price": 4.5,
+      "description": "Cold brew over ice.",
+      "image": "images/cat_drinks.png",
+      "tags": [
+        "veg"
+      ]
+    },
+    {
+      "id": "sw",
+      "name": "Sparkling Water",
+      "category": "Drinks",
+      "price": 3.0,
+      "description": "Chilled sparkling water.",
+      "image": "images/cat_drinks.png",
+      "tags": [
+        "veg"
+      ]
+    },
+    {
+      "id": "wr",
+      "name": "House Red",
+      "category": "Drinks",
+      "price": 6.5,
+      "description": "Glass of house red wine.",
+      "image": "images/cat_drinks.png",
+      "tags": []
+    }
+  ]
+}
